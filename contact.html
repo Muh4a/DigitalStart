@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Enseignement Supérieur Agréé</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html" class="logo">
+        Digital<span>Start</span>
+        <small>Université Privée Agréée</small>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="presentation.html">L'Université</a></li>
+          <li>
+            <a href="formations.html">Licences & Masters</a>
+          </li>
+          <li><a href="galerie.html">Campus</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="hero"
+        style="padding: 4rem 5%; background: linear-gradient(#003366, #002244)"
+      >
+        <h1>Contact</h1>
+        <p>
+          Contactez-nous pour toute information concernant nos formations,
+          admissions ou partenariats.
+        </p>
+      </section>
+      <section class="container">
+        <div class="contact">
+          <form action="#">
+            <div class="infos">
+              <div class="form">
+                <label for="nom">Nom *</label>
+                <input type="text" id="Nom" placeholder="Votre nom" required />
+              </div>
+              <div class="form">
+                <label for="Prenom">Prénom *</label>
+                <input
+                  type="text"
+                  id="Prenom"
+                  placeholder="Votre prénom"
+                  required
+                />
+              </div>
+              <div class="form">
+                <label for="email">Email *</label>
+                <input
+                  type="text"
+                  id="email"
+                  placeholder="Votre email"
+                  required
+                />
+              </div>
+              <div class="form">
+                <label for="telephone">Numéro de Téléphone *</label>
+                <input
+                  type="number"
+                  id="telephone"
+                  placeholder="Votre numero de téléphone"
+                  pattern="[0-9] required"
+                />
+              </div>
+              <div class="form">
+                <label for="niv">Vous êtes : *</label>
+                <select id="niv" required>
+                  <option value="terminal">Je suis en terminal</option>
+                  <option value="bac">Je suis bachelier</option>
+                  <option value="bac+2">J'ai un BAC + 2</option>
+                  <option value="bac+3">J'ai un BAC + 3</option>
+                </select>
+              </div>
+              <div class="form">
+                <label for="moy-bac"
+                  >Moyenne du BAC (si vous êtes bachelier)</label
+                >
+                <input
+                  type="number"
+                  id="moy-bac"
+                  pattern="[0-9]"
+                  maxlength="20"
+                  minlength="0"
+                  placeholder="Ex: 12.50"
+                />
+              </div>
+
+              <div class="form" style="grid-column: 1/-1">
+                <label for="object">Objet *</label>
+                <input type="text" id="object" required />
+              </div>
+              <div class="form" style="grid-column: 1/-1">
+                <label for="msg">Message</label>
+                <textarea id="msg" rows="3"></textarea>
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn"
+              style="margin-top: 40px; width: 50%"
+            >
+              Envoyer
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-bottom">
+        <p>&copy; 2025 DigitalStart University.</p>
+        <p style="font-size: 0.8rem">Développé par : Muh4a et ElBandit</p>
+      </div>
+    </footer>
+  </body>
+</html>
